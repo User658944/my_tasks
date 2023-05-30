@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bgstart"
+    android:scaleType="centerCrop"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40dp"
+            android:id="@+id/imagePen"
+            android:src="@drawable/uusi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newTaskHeader"
+            android:text="NEW TASK"
+            android:textSize="24sp"
+            android:layout_marginBottom="35dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imagePen"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleHeader"
+            android:textColor="#E6FFFFFF"
+            android:text="Title"
+            android:textSize="14sp"
+            android:layout_below="@id/newTaskHeader"
+            android:paddingStart="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/newTaskTitle"
+            android:background="#321693F6"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:layout_marginBottom="25dp"
+            android:layout_below="@id/titleHeader"
+            android:paddingStart="13dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTitle"
+            android:textColor="#E6FFFFFF"
+            android:text="Description"
+            android:textSize="14sp"
+            android:layout_below="@id/newTaskTitle"
+            android:paddingStart="5dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:id="@+id/newTaskDescription"
+            android:background="#321693F6"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:layout_marginBottom="25dp"
+            android:paddingStart="13dp"
+            android:layout_below="@id/descriptionTitle"
+            android:gravity="top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deadlineTitle"
+            android:textColor="#E6FFFFFF"
+            android:text="Deadline"
+            android:textSize="14sp"
+            android:layout_below="@id/newTaskDescription"
+            android:paddingStart="5dp"
+            />
+
+        <EditText
+            android:id="@+id/newTaskDeadline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="#321693F6"
+            android:paddingStart="13dp"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@color/white"
+            android:textSize="22sp"
+            android:layout_below="@id/deadlineTitle"
+            android:enabled="false"
+            android:textColorHint="#32FFFFFF"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/selectDate"
+            android:text="Select a date"
+            android:textSize="12sp"
+            android:textColor="@color/myBlue"
+            android:textAlignment="viewStart"
+            android:paddingStart="22dp"
+            android:background="#001693F6"
+            android:layout_alignTop="@+id/newTaskDeadline"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addTask"
+            android:text="Add task"
+            android:textColor="@color/white"
+            android:backgroundTint="#D71693F6"
+            android:layout_below="@+id/newTaskDescription"
+            android:layout_marginTop="120dp"
+            />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/cancel"
+            android:text="cancel"
+            android:textColor="@color/white"
+            android:backgroundTint="#D71693F6"
+            android:layout_below="@+id/addTask"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

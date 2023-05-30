@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:contentPadding="5dp"
+    android:backgroundTint="#E2F2FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:id="@+id/titletext"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageicon"
+                android:layout_marginTop="3dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="content"
+            android:singleLine="false"
+            android:alpha="0.5"
+            android:id="@+id/descriptiontext"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="5dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/myBlue"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="DEADLINE"
+                android:textSize="12sp"
+                android:id="@+id/deadlineTitle"
+                android:paddingTop="1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01.01.2023"
+                android:id="@+id/deadlineDay"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/completedDay"
+                android:text="01.01.2023"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
